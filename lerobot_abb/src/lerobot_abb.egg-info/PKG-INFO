@@ -1,5 +1,0 @@
-Metadata-Version: 2.4
-Name: lerobot-abb
-Version: 0.1.0
-Requires-Dist: lerobot 0.3.4 
-Requires-Dist: ABBRobotEGM 1.0.4

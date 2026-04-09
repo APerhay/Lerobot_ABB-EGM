@@ -10,11 +10,11 @@ config = ABBEGMConfig(port=6510, fps=250)
 try:
     # Test instantiation
     robot = ABBRobot(config)
-    print(f"✅ LeRobot recognized: {robot.name}")
+    print(f"LeRobot recognized: {robot.name}")
     
     # Test feature mapping
     print(f"Observations: {robot.observation_features}")
     print(f"Actions: {robot.action_features}")
     
 except Exception as e:
-    print(f"❌ Error: {e}")
+    print(f"Error: {e}")

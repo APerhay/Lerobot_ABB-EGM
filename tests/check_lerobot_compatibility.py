@@ -3,7 +3,7 @@ import os
 import torch
 
 # Ensure the src directory is visible
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
 
 try:
     from lerobot_abb import ABBRobot, ABBEGMConfig
@@ -27,12 +27,12 @@ try:
     
     # 5. Logical Verification
     if obs_shape == (6,) and act_shape == (6,):
-        print("\n✅ SUCCESS: Robot matches ABB 6-DOF configuration.")
+        print("\nSUCCESS: Robot matches ABB 6-DOF configuration.")
         print("Your code is ready for 'lerobot-record'.")
     else:
-        print("\n❌ ERROR: Shape mismatch. Expected (6,).")
+        print("\nERROR: Shape mismatch. Expected (6,).")
 
 except ImportError as e:
-    print(f"❌ Import Error: {e}. Check your folder structure.")
+    print(f"Import Error: {e}. Check your folder structure.")
 except Exception as e:
-    print(f"❌ Unexpected Error: {e}")
+    print(f"Unexpected Error: {e}")
