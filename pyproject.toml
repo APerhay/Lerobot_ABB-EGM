@@ -1,0 +1,17 @@
+[project]
+name = "lerobot_abb"
+version = "0.1.0"
+dependencies = [
+    "torch",
+    "numpy",
+    # Remove 'lerobot' and 'ABBRobotEGM' from here if you are managing 
+    # them as sibling folders or local files to avoid circular errors.
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# This tells pip to treat the local 'lerobot_abb' folder as the package
+packages = ["lerobot_abb"]
